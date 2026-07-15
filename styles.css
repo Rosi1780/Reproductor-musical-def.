@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(#f5e9ae, #c29585, #3c2626);
+    width: 100vw;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.header_principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 100px;
+}
+
+.form_buscar {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.form_buscar button {
+    margin-right: 10px;
+    border: none;
+    background: none;
+}
+
+.form_buscar input {
+    width: 400px;
+    padding: 10px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+}
+
+.form_buscar input:enabled {
+    outline: none;
+}
+
+.imagen_header {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-size: cover;
+}
+
+.link_inicio {
+    text-decoration: none;
+    color: inherit;
+}
+
+.link_inicio:hover {
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+.main_contenido {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    min-height: calc(100vh - 100px);
+    position: relative;
+}
+
+.form_buscar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.form_buscar input {
+    width: 300px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 14px;
+    outline: none;
+}
+
+.form_buscar button {
+    font-size: 20px;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    padding: 5px;
+}
+
+.form_buscar button:hover {
+    transform: scale(1.2);
+}
+
+.menu_principal {
+    margin-top: 60px;
+    background-color: #371400;
+    width: 100px;
+    border-radius: 30px 30px 30px 30px;
+    padding: 20px 0;
+    left: 10;
+    height: fit-content;
+    position: fixed;
+    transform: scale(1.2)
+}
+
+.menu_principal ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0;
+}
+
+.links {
+    text-align: center;
+    list-style: none;
+    position: relative;
+}
+
+.links a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+
+.links a:hover {
+    transform: scale(1.1);
+}
+
+.links svg {
+    width: 32px;
+    height: 32px;
+    color: #ffffff;
+}
+
+.tooltip {
+    position: absolute;
+    left: 70px;
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.links:hover .tooltip {
+    opacity: 1;
+}
